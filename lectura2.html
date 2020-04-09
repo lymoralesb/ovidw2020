@@ -4,12 +4,12 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
-	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="stylesheet" href="css/lectura.css">
 </head>
 <body>
 	<header id="header" class="">
 		<div class="cabeceraPrincipal">
-			<div class="cabecera"><img src="img/logoUNAD2.png" alt=""></div>
+			<div class="cabecera"><img src="img/logoUNAD2.png" height= 100px alt=""></div>
 			<div class="cabecera titulo">HTML5 y CSS3</div>
 		</div>
 	</header>
@@ -18,8 +18,8 @@
 			<li class="menu"><a href="index.html" title="">Inicio</a></li>
 			<li class="menu"><a class="menuSeleccionado" href="#" title="">Lecturas</a>
 				<ul class="listaSubMenu">
-					<li><a href="#" title="#">¿Qué es HTML5?</a></li>
-					<li><a href="#" title="#">Lectura 2</a></li>
+					<li><a href="lectura1.html" title="#">¿Qué es HTML5?</a></li>
+					<li><a href="lectura2.html" title="#">Estructura semántica de HTML5</a></li>
 					<li><a href="#" title="#">Lectura 3</a></li>
 					<li><a href="#" title="#">Lectura 4</a></li>
 					<li><a href="#" title="#">Lectura 5</a></li>
@@ -38,27 +38,26 @@
 	<section>
 		<article>
 			<div class="tituloArticulo">
-				¿QUE ES HTML5?
+				Estructura semántica de HTML5
 			</div>
 			<div class="articulo">
-			<p>HTML5  es la última versión de HTML. El término representa dos conceptos diferentes:<br><br>
+			<p>En relación a la estructura de una web, el lenguaje HTML5 utiliza unas etiquetas que le aportan semántica. El lenguaje es capaz de diferenciar, por ejemplo, entre el encabeza del documento y el pie. Google y otros buscadores son capaces de detectar dicha estructura.<br><br>
 			</p>
-			<ul{margin-left: 15;}>
-							<li>trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos.</li>
-							<li>Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. A este conjunto se le llama HTML5 y amigos, a menudo reducido a HTML5.</li><br><br>
-			</ul>
-			<P>
-				Diseñado para ser utilizable por todos los desarrolladores de Open Web, esta página referencía numerosos recursos sobre las tecnologías de HTML5, clasificados en varios grupos según su función.<br><br>
-			</P>
-				<ul{margin-left: 15;}>
-							<li><em>Semántica:</em> Permite describir con mayor precisión cuál es su contenido.<br></li>
-							<li><em>Conectividad:</em> Permite comunicarse con el servidor de formas nuevas e innovadoras.<br></li>
-							<li><em>Sin conexión y almacenamiento:</em>Permite a las páginas web almacenar datos localmente en el lado del cliente y operar sin conexión de manera más eficiente.</li>
-							<li><em>Multimedia:</em>Nos otorga un excelente soporte para utilizar contenido multimedia como lo son audio y video nativamente.</li>
-							<li><em>Gráficos y efectos 2D/3D:</em>Proporciona una amplia gama de nuevas características que se ocupan de los gráficos en la web como lo son canvas 2D, WebGL, SVG, etc.</li>
-							<li><em>Rendimiento e Integración</em>Proporciona una mayor optimización de la velocidad y un mejor uso del hardware.</li>
-							<li><em>Acceso al dispositivo:</em>Proporciona APIs para el uso de varios componentes internos de entrada y salida de nuestro dispositivo.</li>
-							<li><em>CSS3:</em>Nos ofrece una nueva gran variedad de opciones para hacer diseños más sofisticados.</li>
+			<center>
+				<div><img src="img/html5.png" height= 400px /></div>
+			</center>
+			<p>Las etiquetas referentes a la estructura en HTML5 serían:</p><br><br>
+			<ul{margin-left: 20;}>
+							<li><em>header: </em>Representa un grupo que sirve de introducción a un contenido.<br>Normalmente define la cabecera del documento, en donde suelen ir el título del sitio y el logo.<br>El título se podría poner en un h1, y luego, en el article, poner otro h1. Semánticamente serían h1 distintos, ya que cada uno está en una zona distinta de la página web.</li><br>
+							<li><em>hgroup: </em> Sirve para agrupar por ejemplo un título con su subtítulo. Por ejemplo, el título y el lema</li><br>
+							<li><em>nav: </em>Para incluir dentro (generalmente en una lista) el menú principal de una web. También se puede utilizar para los menús secundarios.</li><br>
+							<li><em>article: </em>Representa un contenido que puede ser distribuido o reutilizado como parte independiente, por ejemplo en sindicación. Por ejemplo, podría ser una entrada de un foro o de bitácora, el artículo de un periódico, o un comentario que envía un usuario.<br>
+								A veces los artículos se pueden anidar, y los de dentro están relacionados con el artículo externo y principal. Por ejemplo, sería el caso de cada comentario de un artículo.</li><br>
+							<li><em>section: </em>Representa una sección general de un documento o aplicación. Es un grupo temático de contenido, y suele tener un encabezado.<br>
+								Por ejemplo, los capítulos de un libro, las pestañas de un contenido dividido en pestañas, o las secciones numeradas de una tesis. La página de inicio de un sitio web podría dividirse en secciones tales como la introducción, novedades, y la información de contacto.</li><br>
+							<li><em>aside: </em>Es una sección que de alguna forma está relacionada con el contenido principal que la rodea, pero se puede considerar aparte de dicho contenido.<br>
+								En estas secciones se suelen poner lateralmente menús secundarios (dentro de nav), anuncios y banners o citas.<br>
+								Podemos encontrar un pie en cualquiera de las otras secciones del documento (header, article o secction).</li><br>
 				</ul>			
 			</div>
 
@@ -68,10 +67,10 @@
 		</div>
 		<article>
 			<div class="tituloArticulo">
-				CURSO HTML5
+				Guía HTML5
 			</div>
 			<div class="articulo">
-				<iframe src="pdf/CursoHTML5.pdf" frameborder="0" width="100%" height="400px"></iframe>
+				<iframe src="pdf/Guia_HTML5_El_presente_de_la_web.pdf" frameborder="0" width="100%" height="400px"></iframe>
 			</div>
 
 
