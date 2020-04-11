@@ -153,3 +153,7 @@ nav li:hover>ul{
 .h3{
     line-height: 200%;
 }
+.datos {
+    font-weight:bold;
+    font-family: "Franklin Gothic Demi" ;
+}
